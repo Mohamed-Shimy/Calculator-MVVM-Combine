@@ -10,4 +10,5 @@ import Foundation
 extension Notification.Name {
     
     static let arithmeticCalculatorResult = Self("arithmeticCalculatorResult")
+    static let currencyCalculatorResult = Self("currencyCalculatorResult")
 }

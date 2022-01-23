@@ -13,6 +13,7 @@ protocol CurrencyCalculatorViewModelProtocol: ObservableObject {
     var result: Double { get }
     var isLoading: Bool { get set }
     var isLocalResult: Bool { get set }
+    var canPostResult: Bool { get }
     var error: NetworkError? { get set }
     
     init(networkManager: CurrencyNetworkProtocol, exchangeVault: ExchangeRateVaultProtocol)

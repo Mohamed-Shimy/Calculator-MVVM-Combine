@@ -12,7 +12,7 @@ struct ArithmeticCalculatorView<ViewModel: ArithmeticCalculatorViewModelProtocol
     // MARK: - Public Properties
     
     @StateObject var viewModel: ViewModel
-    let notificationCenter: Notifiable
+    private(set) var notificationCenter: Notifiable = NotificationCenter.default
     
     // MARK: - View Body
     
@@ -35,6 +35,10 @@ struct ArithmeticCalculatorView<ViewModel: ArithmeticCalculatorViewModelProtocol
         .padding()
         .onDisappear {
             postLastResult()
+        }.onReceive(NotificationCenter.default.publisher(for: .currencyCalculatorResult)) { notification in
+            if let result = notification.object as? Double {
+                viewModel.setRemote(result: result)
+            }
         }
     }
     

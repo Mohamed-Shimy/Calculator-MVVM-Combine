@@ -62,7 +62,7 @@ final class ArithmeticCalculatorViewModel: ArithmeticCalculatorViewModelProtocol
     
     func setRemote(result: Double) {
         let op = findSuitableOperator(for: result)
-        let secondOperand = calculate(self.result, result, with: op.invert)
+        let secondOperand = calculate(result, self.result, with: op.invert)
         setOperator(op)
         inputText = "\(secondOperand)"
         setOperator(.equal)

@@ -13,15 +13,29 @@ typealias CancellableBag = Set<AnyCancellable>
 final class CurrencyCalculatorViewModel: CurrencyCalculatorViewModelProtocol {
     
     // MARK: - Properties
+    
     @Published var currencyInput = ""
-    @Published private(set) var result: Double = 0
     @Published var isLoading = false
     @Published var isLocalResult = false
     @Published var error: NetworkError? = nil
+    @Published private(set) var result: Double = 0 {
+        didSet {
+            lastPostedResult = .init(result: result)
+        }
+    }
     
     private let exchangeVault: ExchangeRateVaultProtocol
     private let networkManager: CurrencyNetworkProtocol
+    private var lastPostedResult: LastExchangeConversionItem?
     private var cancellableBag = CancellableBag()
+    
+    var canPostResult: Bool {
+        if lastPostedResult != nil {
+            lastPostedResult = nil
+            return true
+        }
+        return false
+    }
     
     // MARK: - init
     
