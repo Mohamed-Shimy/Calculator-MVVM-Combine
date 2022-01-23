@@ -19,6 +19,9 @@
 		FFD90E30279D16C500486CEE /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E2F279D16C500486CEE /* Operation.swift */; };
 		FFD90E37279D17BF00486CEE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E36279D17BF00486CEE /* Collection.swift */; };
 		FFD90E39279D17E600486CEE /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E38279D17E600486CEE /* History.swift */; };
+		FFD90E3B279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E3A279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift */; };
+		FFD90E3D279D197200486CEE /* ArithmeticCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E3C279D197200486CEE /* ArithmeticCalculatorViewModel.swift */; };
+		FFD90E40279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E3F279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		FFD90E2F279D16C500486CEE /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		FFD90E36279D17BF00486CEE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		FFD90E38279D17E600486CEE /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		FFD90E3A279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorViewModelProtocol.swift; sourceTree = "<group>"; };
+		FFD90E3C279D197200486CEE /* ArithmeticCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorViewModel.swift; sourceTree = "<group>"; };
+		FFD90E3F279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArithmeticCalculatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 		FFD90E02279D130800486CEE /* CalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				FFD90E3E279D19D300486CEE /* ArithmeticCalculator */,
 				FFD90E03279D130800486CEE /* CalculatorTests.swift */,
 			);
 			path = CalculatorTests;
@@ -224,6 +231,8 @@
 		FFD90E2B279D162E00486CEE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FFD90E3A279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift */,
+				FFD90E3C279D197200486CEE /* ArithmeticCalculatorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -244,6 +253,14 @@
 				FFD90E36279D17BF00486CEE /* Collection.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFD90E3E279D19D300486CEE /* ArithmeticCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E3F279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift */,
+			);
+			path = ArithmeticCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,11 +393,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD90E3B279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift in Sources */,
 				FFD90E28279D144200486CEE /* Tab.swift in Sources */,
 				FFD90E2E279D169400486CEE /* Operator.swift in Sources */,
 				FFD90E39279D17E600486CEE /* History.swift in Sources */,
 				FFD90DF3279D130400486CEE /* CalculatorApp.swift in Sources */,
 				FFD90E30279D16C500486CEE /* Operation.swift in Sources */,
+				FFD90E3D279D197200486CEE /* ArithmeticCalculatorViewModel.swift in Sources */,
 				FFD90E37279D17BF00486CEE /* Collection.swift in Sources */,
 				FFD90E26279D143600486CEE /* HomeView.swift in Sources */,
 			);
@@ -390,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD90E40279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift in Sources */,
 				FFD90E04279D130800486CEE /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
