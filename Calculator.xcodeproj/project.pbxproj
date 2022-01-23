@@ -17,6 +17,8 @@
 		FFD90E28279D144200486CEE /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E27279D144200486CEE /* Tab.swift */; };
 		FFD90E2E279D169400486CEE /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E2D279D169400486CEE /* Operator.swift */; };
 		FFD90E30279D16C500486CEE /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E2F279D16C500486CEE /* Operation.swift */; };
+		FFD90E37279D17BF00486CEE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E36279D17BF00486CEE /* Collection.swift */; };
+		FFD90E39279D17E600486CEE /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E38279D17E600486CEE /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		FFD90E27279D144200486CEE /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		FFD90E2D279D169400486CEE /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		FFD90E2F279D16C500486CEE /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		FFD90E36279D17BF00486CEE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		FFD90E38279D17E600486CEE /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 		FFD90E1F279D136E00486CEE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FFD90E35279D17B400486CEE /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -228,8 +233,17 @@
 			children = (
 				FFD90E2D279D169400486CEE /* Operator.swift */,
 				FFD90E2F279D16C500486CEE /* Operation.swift */,
+				FFD90E38279D17E600486CEE /* History.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FFD90E35279D17B400486CEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E36279D17BF00486CEE /* Collection.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,8 +378,10 @@
 			files = (
 				FFD90E28279D144200486CEE /* Tab.swift in Sources */,
 				FFD90E2E279D169400486CEE /* Operator.swift in Sources */,
+				FFD90E39279D17E600486CEE /* History.swift in Sources */,
 				FFD90DF3279D130400486CEE /* CalculatorApp.swift in Sources */,
 				FFD90E30279D16C500486CEE /* Operation.swift in Sources */,
+				FFD90E37279D17BF00486CEE /* Collection.swift in Sources */,
 				FFD90E26279D143600486CEE /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
