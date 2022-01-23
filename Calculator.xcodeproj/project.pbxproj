@@ -29,6 +29,15 @@
 		FFD90E4D279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E4C279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift */; };
 		FFD90E4F279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E4E279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift */; };
 		FFD90E51279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E50279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift */; };
+		FFD90E56279D240E00486CEE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E55279D240E00486CEE /* NetworkManager.swift */; };
+		FFD90E58279D242000486CEE /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E57279D242000486CEE /* TargetType.swift */; };
+		FFD90E5B279D243C00486CEE /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E5A279D243C00486CEE /* Networkable.swift */; };
+		FFD90E5D279D247900486CEE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E5C279D247900486CEE /* NetworkError.swift */; };
+		FFD90E60279D250600486CEE /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E5F279D250600486CEE /* ParameterEncoding.swift */; };
+		FFD90E62279D251B00486CEE /* ParameterEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E61279D251B00486CEE /* ParameterEncodable.swift */; };
+		FFD90E64279D253800486CEE /* HttpBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E63279D253800486CEE /* HttpBodyEncoding.swift */; };
+		FFD90E66279D256300486CEE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E65279D256300486CEE /* Task.swift */; };
+		FFD90E68279D258000486CEE /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E67279D258000486CEE /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +83,15 @@
 		FFD90E4C279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorOperationsView.swift; sourceTree = "<group>"; };
 		FFD90E4E279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorHistoryView.swift; sourceTree = "<group>"; };
 		FFD90E50279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorHistoryCellView.swift; sourceTree = "<group>"; };
+		FFD90E55279D240E00486CEE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FFD90E57279D242000486CEE /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		FFD90E5A279D243C00486CEE /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		FFD90E5C279D247900486CEE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FFD90E5F279D250600486CEE /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		FFD90E61279D251B00486CEE /* ParameterEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncodable.swift; sourceTree = "<group>"; };
+		FFD90E63279D253800486CEE /* HttpBodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBodyEncoding.swift; sourceTree = "<group>"; };
+		FFD90E65279D256300486CEE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FFD90E67279D258000486CEE /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +208,7 @@
 			children = (
 				FFD90E22279D141800486CEE /* Home */,
 				FFD90E29279D160700486CEE /* ArithmeticCalculator */,
+				FFD90E52279D23B000486CEE /* CurrencyCalculator */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -197,6 +216,7 @@
 		FFD90E21279D138400486CEE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FFD90E53279D23CF00486CEE /* Remote */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -306,6 +326,53 @@
 				FFD90E4A279D1DBF00486CEE /* NotificationCenter + Notifiable.swift */,
 			);
 			path = Notifiable;
+			sourceTree = "<group>";
+		};
+		FFD90E52279D23B000486CEE /* CurrencyCalculator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CurrencyCalculator;
+			sourceTree = "<group>";
+		};
+		FFD90E53279D23CF00486CEE /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E54279D23DA00486CEE /* Base */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		FFD90E54279D23DA00486CEE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E59279D243000486CEE /* Network Manager */,
+				FFD90E5E279D24F600486CEE /* Encoding */,
+				FFD90E57279D242000486CEE /* TargetType.swift */,
+				FFD90E65279D256300486CEE /* Task.swift */,
+				FFD90E67279D258000486CEE /* HTTPMethod.swift */,
+				FFD90E5C279D247900486CEE /* NetworkError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FFD90E59279D243000486CEE /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E55279D240E00486CEE /* NetworkManager.swift */,
+				FFD90E5A279D243C00486CEE /* Networkable.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		FFD90E5E279D24F600486CEE /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E5F279D250600486CEE /* ParameterEncoding.swift */,
+				FFD90E61279D251B00486CEE /* ParameterEncodable.swift */,
+				FFD90E63279D253800486CEE /* HttpBodyEncoding.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,17 +505,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD90E60279D250600486CEE /* ParameterEncoding.swift in Sources */,
 				FFD90E3B279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift in Sources */,
 				FFD90E51279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift in Sources */,
 				FFD90E4F279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift in Sources */,
 				FFD90E28279D144200486CEE /* Tab.swift in Sources */,
+				FFD90E5B279D243C00486CEE /* Networkable.swift in Sources */,
 				FFD90E2E279D169400486CEE /* Operator.swift in Sources */,
 				FFD90E39279D17E600486CEE /* History.swift in Sources */,
+				FFD90E68279D258000486CEE /* HTTPMethod.swift in Sources */,
 				FFD90E49279D1D9A00486CEE /* Notifiable.swift in Sources */,
 				FFD90E42279D1D1700486CEE /* ArithmeticCalculatorView.swift in Sources */,
+				FFD90E64279D253800486CEE /* HttpBodyEncoding.swift in Sources */,
+				FFD90E5D279D247900486CEE /* NetworkError.swift in Sources */,
+				FFD90E62279D251B00486CEE /* ParameterEncodable.swift in Sources */,
 				FFD90E4B279D1DBF00486CEE /* NotificationCenter + Notifiable.swift in Sources */,
 				FFD90DF3279D130400486CEE /* CalculatorApp.swift in Sources */,
+				FFD90E56279D240E00486CEE /* NetworkManager.swift in Sources */,
+				FFD90E66279D256300486CEE /* Task.swift in Sources */,
 				FFD90E30279D16C500486CEE /* Operation.swift in Sources */,
+				FFD90E58279D242000486CEE /* TargetType.swift in Sources */,
 				FFD90E3D279D197200486CEE /* ArithmeticCalculatorViewModel.swift in Sources */,
 				FFD90E45279D1D5400486CEE /* Notification.Name.swift in Sources */,
 				FFD90E37279D17BF00486CEE /* Collection.swift in Sources */,
