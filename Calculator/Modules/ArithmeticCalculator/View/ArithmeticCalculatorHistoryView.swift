@@ -11,14 +11,15 @@ struct ArithmeticCalculatorHistoryView: View {
     
     // MARK: - Public Properties
     
-    var items: History<Operation>
-    var onTapCell: ((Operation) -> ())?
+    private(set) var items: History<Operation>
+    private(set) var onTapCell: ((Operation) -> ())?
+    private(set) var columns: [GridItem] = Array(repeating: GridItem(.flexible(minimum: 50)), count: 3)
     
     // MARK: - View Body
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem()], spacing: 15) {
+            LazyVGrid(columns: columns) {
                 ForEach(items) { item in
                     ArithmeticCalculatorHistoryCellView(item: item)
                         .onTapGesture { onTapCell?(item) }
