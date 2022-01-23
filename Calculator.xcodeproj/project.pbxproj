@@ -13,6 +13,8 @@
 		FFD90E04279D130800486CEE /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E03279D130800486CEE /* CalculatorTests.swift */; };
 		FFD90E0E279D130800486CEE /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E0D279D130800486CEE /* CalculatorUITests.swift */; };
 		FFD90E10279D130800486CEE /* CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E0F279D130800486CEE /* CalculatorUITestsLaunchTests.swift */; };
+		FFD90E26279D143600486CEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E25279D143600486CEE /* HomeView.swift */; };
+		FFD90E28279D144200486CEE /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E27279D144200486CEE /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		FFD90E09279D130800486CEE /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD90E0D279D130800486CEE /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		FFD90E0F279D130800486CEE /* CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFD90E25279D143600486CEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FFD90E27279D144200486CEE /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		FFD90E20279D137600486CEE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FFD90E22279D141800486CEE /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -162,6 +167,31 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FFD90E22279D141800486CEE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E24279D142700486CEE /* Models */,
+				FFD90E23279D142200486CEE /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFD90E23279D142200486CEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E25279D143600486CEE /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFD90E24279D142700486CEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E27279D144200486CEE /* Tab.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD90E28279D144200486CEE /* Tab.swift in Sources */,
 				FFD90DF3279D130400486CEE /* CalculatorApp.swift in Sources */,
+				FFD90E26279D143600486CEE /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
