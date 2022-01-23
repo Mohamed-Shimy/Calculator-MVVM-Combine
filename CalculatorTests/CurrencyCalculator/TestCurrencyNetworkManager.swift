@@ -9,7 +9,7 @@ import Foundation
 import Combine
 @testable import Calculator
 
-class TextCurrencyNetworkManager: CurrencyNetworkProtocol {
+class TestCurrencyNetworkManager: CurrencyNetworkProtocol {
     
     func convert(_ amount: Double, from: String, to: String) -> AnyPublisher<CurrencyExchangeModel, NetworkError> {
         return CurrencyExchangeResponse()
