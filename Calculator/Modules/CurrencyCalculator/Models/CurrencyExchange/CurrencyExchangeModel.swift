@@ -9,9 +9,9 @@ import Foundation
 
 struct CurrencyExchangeModel: Codable {
     
-    let fromType, fromValue, toType, resultString: String?
-    let result: Double?
-    let valid: Bool?
+    var fromType, fromValue, toType, resultString: String?
+    var result: Double?
+    var valid: Bool?
     
     enum CodingKeys: String, CodingKey {
         case valid

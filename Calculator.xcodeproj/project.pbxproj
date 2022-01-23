@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF48C5D5279DD16700FBA3DD /* CurrencyExchangeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48C5D4279DD16700FBA3DD /* CurrencyExchangeStore.swift */; };
+		FF48C5D7279DD28800FBA3DD /* CurrencyCalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF48C5D6279DD28800FBA3DD /* CurrencyCalculatorViewModelTests.swift */; };
 		FFD90DF3279D130400486CEE /* CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90DF2279D130400486CEE /* CalculatorApp.swift */; };
 		FFD90DF7279D130800486CEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD90DF6279D130800486CEE /* Assets.xcassets */; };
 		FFD90DFA279D130800486CEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD90DF9279D130800486CEE /* Preview Assets.xcassets */; };
@@ -76,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF48C5D4279DD16700FBA3DD /* CurrencyExchangeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeStore.swift; sourceTree = "<group>"; };
+		FF48C5D6279DD28800FBA3DD /* CurrencyCalculatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCalculatorViewModelTests.swift; sourceTree = "<group>"; };
 		FFD90DEF279D130400486CEE /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD90DF2279D130400486CEE /* CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorApp.swift; sourceTree = "<group>"; };
 		FFD90DF6279D130800486CEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -459,9 +463,11 @@
 		FFD90E78279D27EE00486CEE /* CurrencyCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				FF48C5D4279DD16700FBA3DD /* CurrencyExchangeStore.swift */,
 				FFD90E79279D282800486CEE /* TestCurrencyNetworkManager.swift */,
 				FFD90E7B279D284200486CEE /* CurrencyExchangeResponse.swift */,
 				FFD90E88279D3F2700486CEE /* TestExchangeRateVault.swift */,
+				FF48C5D6279DD28800FBA3DD /* CurrencyCalculatorViewModelTests.swift */,
 			);
 			path = CurrencyCalculator;
 			sourceTree = "<group>";
@@ -695,7 +701,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD90E40279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift in Sources */,
+				FF48C5D5279DD16700FBA3DD /* CurrencyExchangeStore.swift in Sources */,
 				FFD90E89279D3F2700486CEE /* TestExchangeRateVault.swift in Sources */,
+				FF48C5D7279DD28800FBA3DD /* CurrencyCalculatorViewModelTests.swift in Sources */,
 				FFD90E7A279D282800486CEE /* TestCurrencyNetworkManager.swift in Sources */,
 				FFD90E7C279D284200486CEE /* CurrencyExchangeResponse.swift in Sources */,
 				FFD90E04279D130800486CEE /* CalculatorTests.swift in Sources */,

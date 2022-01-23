@@ -14,24 +14,20 @@ struct CurrencyExchangeResponse: Publisher {
     typealias Output = CurrencyExchangeModel
     typealias Failure = NetworkError
     
-    private let passThroughSubject = PassthroughSubject<Output, Failure>()
+    private let sender = CurrentValueSubject<Output, Failure>(.init())
+    private let exchangeStore = USDCurrencyExchangeStore.open
     
     func receive<S>(subscriber: S) where S : Subscriber, NetworkError == S.Failure, CurrencyExchangeModel == S.Input {
-        passThroughSubject.receive(subscriber: subscriber)
+        sender.receive(subscriber: subscriber)
     }
     
     func convert(_ amount: Double, from: String, to: String) -> AnyPublisher<Output, Failure> {
-        if Currency(rawValue: from.lowercased()) == .egp, Currency(rawValue: to.lowercased()) == .usd {
-            let result = amount * 15.7
-            let model = CurrencyExchangeModel(fromType: from, fromValue: "\(amount)",
-                                              toType: to, resultString: "\(result)",
-                                              result: result, valid: true)
-            passThroughSubject.send(model)
+        if let model = exchangeStore.convert(amount, from: from, to: to) {
+            sender.send(model)
         } else {
             let error = NetworkError(0, message: "Cannot Convert")
-            passThroughSubject.send(completion: .failure(error))
+            sender.send(completion: .failure(error))
         }
-        
-        return passThroughSubject.eraseToAnyPublisher()
+        return sender.eraseToAnyPublisher()
     }
 }
