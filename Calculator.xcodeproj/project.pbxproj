@@ -22,6 +22,13 @@
 		FFD90E3B279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E3A279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift */; };
 		FFD90E3D279D197200486CEE /* ArithmeticCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E3C279D197200486CEE /* ArithmeticCalculatorViewModel.swift */; };
 		FFD90E40279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E3F279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift */; };
+		FFD90E42279D1D1700486CEE /* ArithmeticCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E41279D1D1700486CEE /* ArithmeticCalculatorView.swift */; };
+		FFD90E45279D1D5400486CEE /* Notification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E44279D1D5400486CEE /* Notification.Name.swift */; };
+		FFD90E49279D1D9A00486CEE /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E48279D1D9A00486CEE /* Notifiable.swift */; };
+		FFD90E4B279D1DBF00486CEE /* NotificationCenter + Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E4A279D1DBF00486CEE /* NotificationCenter + Notifiable.swift */; };
+		FFD90E4D279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E4C279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift */; };
+		FFD90E4F279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E4E279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift */; };
+		FFD90E51279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD90E50279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		FFD90E3A279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorViewModelProtocol.swift; sourceTree = "<group>"; };
 		FFD90E3C279D197200486CEE /* ArithmeticCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorViewModel.swift; sourceTree = "<group>"; };
 		FFD90E3F279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArithmeticCalculatorViewModel.swift; sourceTree = "<group>"; };
+		FFD90E41279D1D1700486CEE /* ArithmeticCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorView.swift; sourceTree = "<group>"; };
+		FFD90E44279D1D5400486CEE /* Notification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.Name.swift; sourceTree = "<group>"; };
+		FFD90E48279D1D9A00486CEE /* Notifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifiable.swift; sourceTree = "<group>"; };
+		FFD90E4A279D1DBF00486CEE /* NotificationCenter + Notifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter + Notifiable.swift"; sourceTree = "<group>"; };
+		FFD90E4C279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorOperationsView.swift; sourceTree = "<group>"; };
+		FFD90E4E279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorHistoryView.swift; sourceTree = "<group>"; };
+		FFD90E50279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticCalculatorHistoryCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +179,7 @@
 		FFD90E1F279D136E00486CEE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FFD90E46279D1D7E00486CEE /* Utilities */,
 				FFD90E35279D17B400486CEE /* Extensions */,
 			);
 			path = Core;
@@ -224,6 +239,10 @@
 		FFD90E2A279D162900486CEE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFD90E41279D1D1700486CEE /* ArithmeticCalculatorView.swift */,
+				FFD90E4C279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift */,
+				FFD90E4E279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift */,
+				FFD90E50279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,7 +269,7 @@
 		FFD90E35279D17B400486CEE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FFD90E36279D17BF00486CEE /* Collection.swift */,
+				FFD90E43279D1D4900486CEE /* Foundation */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +280,32 @@
 				FFD90E3F279D19E100486CEE /* TestArithmeticCalculatorViewModel.swift */,
 			);
 			path = ArithmeticCalculator;
+			sourceTree = "<group>";
+		};
+		FFD90E43279D1D4900486CEE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E36279D17BF00486CEE /* Collection.swift */,
+				FFD90E44279D1D5400486CEE /* Notification.Name.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FFD90E46279D1D7E00486CEE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E47279D1D8B00486CEE /* Notifiable */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FFD90E47279D1D8B00486CEE /* Notifiable */ = {
+			isa = PBXGroup;
+			children = (
+				FFD90E48279D1D9A00486CEE /* Notifiable.swift */,
+				FFD90E4A279D1DBF00486CEE /* NotificationCenter + Notifiable.swift */,
+			);
+			path = Notifiable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,13 +439,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD90E3B279D191C00486CEE /* ArithmeticCalculatorViewModelProtocol.swift in Sources */,
+				FFD90E51279D1F6800486CEE /* ArithmeticCalculatorHistoryCellView.swift in Sources */,
+				FFD90E4F279D1F1300486CEE /* ArithmeticCalculatorHistoryView.swift in Sources */,
 				FFD90E28279D144200486CEE /* Tab.swift in Sources */,
 				FFD90E2E279D169400486CEE /* Operator.swift in Sources */,
 				FFD90E39279D17E600486CEE /* History.swift in Sources */,
+				FFD90E49279D1D9A00486CEE /* Notifiable.swift in Sources */,
+				FFD90E42279D1D1700486CEE /* ArithmeticCalculatorView.swift in Sources */,
+				FFD90E4B279D1DBF00486CEE /* NotificationCenter + Notifiable.swift in Sources */,
 				FFD90DF3279D130400486CEE /* CalculatorApp.swift in Sources */,
 				FFD90E30279D16C500486CEE /* Operation.swift in Sources */,
 				FFD90E3D279D197200486CEE /* ArithmeticCalculatorViewModel.swift in Sources */,
+				FFD90E45279D1D5400486CEE /* Notification.Name.swift in Sources */,
 				FFD90E37279D17BF00486CEE /* Collection.swift in Sources */,
+				FFD90E4D279D1E6700486CEE /* ArithmeticCalculatorOperationsView.swift in Sources */,
 				FFD90E26279D143600486CEE /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

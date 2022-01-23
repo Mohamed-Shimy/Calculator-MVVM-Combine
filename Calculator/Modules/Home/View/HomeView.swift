@@ -11,7 +11,8 @@ struct HomeView: View {
         
     var body: some View {
         TabView {
-            Text(Tab.arithmeticCalculator.title)
+            ArithmeticCalculatorView(viewModel: ArithmeticCalculatorViewModel(),
+                                     notificationCenter: NotificationCenter.default)
                 .tabItem(Tab.arithmeticCalculator.label)
             
             Text(Tab.currencyCalculator.title)
